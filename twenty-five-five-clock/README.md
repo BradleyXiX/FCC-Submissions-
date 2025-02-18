@@ -1,70 +1,136 @@
-# Getting Started with Create React App
+## 25 + 5 Clock (Pomodoro Timer)
+A Pomodoro Timer (also known as a 25 + 5 Clock) built using React. This app helps users manage their work and break intervals effectively by alternating between a 25-minute work session and a 5-minute break.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+Adjustable Timers:
 
-## Available Scripts
+Set the length of the work session (default: 25 minutes).
 
-In the project directory, you can run:
+Set the length of the break session (default: 5 minutes).
 
-### `npm start`
+Timer Controls:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Start, pause, and reset the timer.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Automatic Switching:
 
-### `npm test`
+Automatically switches between work and break sessions.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Audio Notification:
 
-### `npm run build`
+Plays a beep sound when the timer reaches zero.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+User-Friendly Interface:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Displays the remaining time in mm:ss format.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clearly indicates whether the current session is a work session or a break session.
 
-### `npm run eject`
+## User Stories Fulfilled
+This project fulfills the following user stories:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Adjustable break and session lengths.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Start, pause, and reset functionality.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Automatic switching between work and break sessions.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Audio notification when the timer reaches zero.
 
-## Learn More
+Prevents invalid inputs (e.g., session or break length ≤ 0 or > 60).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies Used
+React: A JavaScript library for building user interfaces.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+HTML5: For structuring the app.
 
-### Code Splitting
+CSS: For styling the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+JavaScript: For handling the timer logic and user interactions.
 
-### Analyzing the Bundle Size
+HTML5 Audio: For playing the beep sound.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## How to Use
+Set Session and Break Lengths:
 
-### Making a Progressive Web App
+Use the + and - buttons to adjust the session length (default: 25 minutes) and break length (default: 5 minutes).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The session and break lengths must be between 1 and 60 minutes.
 
-### Advanced Configuration
+Start the Timer:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Click the Start button to begin the countdown.
 
-### Deployment
+The timer will start with the work session.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Pause the Timer:
 
-### `npm run build` fails to minify
+Click the Pause button to pause the countdown.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Reset the Timer:
+
+Click the Reset button to reset the timer to its default state (25-minute session, 5-minute break).
+
+Automatic Switching:
+
+When the work session ends, the timer will automatically switch to the break session, and vice versa.
+
+A beep sound will play when the timer reaches zero.
+
+ ## Installation
+To run this project locally, follow these steps:
+
+Clone the Repository:
+
+bash
+
+git clone https://github.com/BradleyXiX/FCC-Submissions-/tree/main/twenty-five-five-clock
+cd pomodoro-clock
+Install Dependencies:
+
+bash
+
+npm install
+Start the Development Server:
+
+bash
+
+npm start
+Open the App:
+
+The app will open in your browser at http://localhost:3000.
+
+ ## Project Structure
+
+pomodoro-clock/
+├── public/
+│   ├── index.html
+│   └── (other static files)
+├── src/
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── (other React components)
+├── package.json
+├── README.md
+└── (other configuration files)
+
+
+## Credits
+freeCodeCamp: For providing the project requirements and inspiration.
+
+React Documentation: For guidance on building React apps.
+
+HTML5 Audio: For the beep sound.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+
+## Contact
+If you have any questions or feedback, feel free to reach out:
+
+Email: BradJohn70@gmail.com
+
+GitHub: BradleyXiX
+
