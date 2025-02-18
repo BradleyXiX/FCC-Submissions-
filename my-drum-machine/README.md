@@ -26,12 +26,16 @@ This project implements a drum machine with nine pads corresponding to different
 
 ## Installation
 
-Clone this repository: git clone https://github.com/BradleyXiX/FCC-Submissions-/tree/main/calculator
+Clone this repository: git clone https://github.com/BradleyXiX/FCC-Submissions-/tree/main/my-drum-machine
 
-Navigate to the project directory:  cd javascript-calculator
+Navigate to the project directory:  cd my-drum-machine
 
 Install dependencies:  npm install
 
 Start the development server:  npm start
 
 Open your browser and go to http://localhost:3000
+
+## Contact Me
+
+Bradley Chiwo -  BradJohn70@gmail.com
