@@ -100,22 +100,6 @@ Open the App:
 
 The app will open in your browser at http://localhost:3000.
 
- ## Project Structure
-
-pomodoro-clock/
-├── public/
-│   ├── index.html
-│   └── (other static files)
-├── src/
-│   ├── App.js
-│   ├── App.css
-│   ├── index.js
-│   └── (other React components)
-├── package.json
-├── README.md
-└── (other configuration files)
-
-
 ## Credits
 freeCodeCamp: For providing the project requirements and inspiration.
 
