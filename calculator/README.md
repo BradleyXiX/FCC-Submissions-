@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+JavaScript Calculator
+Show Image
+Overview
+This is a JavaScript calculator built with React for the FreeCodeCamp Front End Libraries Certification. It implements a fully functional calculator that adheres to formula logic (similar to most standard calculators) and meets all project requirements.
+Live Demo
+View the live demo here (Replace with your actual deployed link)
+Features
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Performs basic arithmetic operations: addition, subtraction, multiplication, and division
+Handles decimal input with appropriate validation
+Follows formula logic with proper operator precedence
+Provides reasonably precise calculations (up to 15 decimal places)
+Responsive design that works on various screen sizes
+Keyboard support for improved accessibility
 
-## Available Scripts
+User Stories Fulfilled
+This calculator meets all the required user stories from the FreeCodeCamp project specification:
 
-In the project directory, you can run:
+✅ Contains clickable elements for all numbers, operators, equals, and clear functions
+✅ Displays input and output values appropriately
+✅ Prevents invalid inputs like multiple zeros at the beginning or multiple decimal points
+✅ Handles consecutive operators according to specifications
+✅ Supports decimal operations with sufficient precision
+✅ Implements formula logic rather than immediate execution logic
+✅ Clears all input and resets to initial state with the clear button
 
-### `npm start`
+Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+React (Hooks for state management)
+CSS Grid for layout
+JavaScript (ES6+)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Installation
 
-### `npm test`
+Clone this repository
+git clone https://github.com/BradleyXiX/FCC-Submissions-/tree/main/calculator
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Navigate to the project directory
+cd javascript-calculator
 
-### `npm run build`
+Install dependencies
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Start the development server
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Open your browser and go to http://localhost:3000
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+How It Works
+The calculator implements formula logic, which means it follows the standard order of operations (multiplication/division before addition/subtraction). The main components include:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Display area: Shows the current input and the formula being built
+Number buttons (0-9): For entering numeric values
+Operator buttons (+, -, *, /): For performing arithmetic operations
+Decimal button (.): For entering decimal values
+Equals button (=): For calculating the result
+Clear button (AC): For resetting the calculator
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Special Behaviors
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Leading zeros are not allowed (e.g., typing "00" will just display "0")
+Only one decimal point is allowed per number
+Consecutive operators follow the "last operator" rule, with a special exception for the minus sign when used as a negative indicator
+After evaluation (pressing =), starting a new operation with another operator will use the previous result
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Testing
+This calculator has been tested against the FreeCodeCamp test suite. To run the tests:
 
-## Learn More
+Include the FreeCodeCamp test script in your HTML:
+htmlCopy<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Future Enhancements
+Potential improvements for future versions:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Add memory functions (M+, M-, MR, MC)
+Implement keyboard support for improved accessibility
+Add a calculation history feature
+Create a scientific calculator mode with additional operations
+Improve responsive design for different device sizes
 
-### Analyzing the Bundle Size
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+FreeCodeCamp for providing the project requirements and test suite
+Inspiration from standard calculator designs and functionality
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contact
+Bradley Chiwo - BradJohn70@gmail.com
+Project Link: https://github.com/BradleyXiX/FCC-Submissions-/tree/main/calculator
