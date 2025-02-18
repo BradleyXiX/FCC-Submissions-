@@ -24,3 +24,14 @@ This project implements a drum machine with nine pads corresponding to different
 - **User Story #6**: Keyboard key press triggers the corresponding sound.
 - **User Story #7**: The name of the sound played is shown in the display.
 
+## Installation
+
+Clone this repository: git clone https://github.com/BradleyXiX/FCC-Submissions-/tree/main/calculator
+
+Navigate to the project directory:  cd javascript-calculator
+
+Install dependencies:  npm install
+
+Start the development server:  npm start
+
+Open your browser and go to http://localhost:3000
