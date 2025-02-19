@@ -33,15 +33,15 @@ function Calculator() {
       setEvaluated(false);
     } else {
       if (isOperator(formula.slice(-1)) && val !== '-') {
-        // If the last character is an operator (and not '-'), replace it
+   
         if (isOperator(formula.slice(-2, -1)) && formula.slice(-1) === '-') {
-          // Handle case where we have two operators (the last one being '-')
+
           setFormula(formula.slice(0, -2) + val);
         } else {
           setFormula(formula.slice(0, -1) + val);
         }
       } else if (formula.slice(-1) === '-' && isOperator(formula.slice(-2, -1)) && val === '-') {
-        // Don't allow multiple '-' after an operator
+       
         return;
       } else {
         setFormula(formula + val);
@@ -58,7 +58,7 @@ function Calculator() {
     } else {
       if (!display.includes('.')) {
         setDisplay(display + '.');
-        // Only add decimal to formula if the last character isn't an operator
+       
         if (isOperator(formula.slice(-1))) {
           setFormula(formula + '0.');
         } else {
@@ -72,12 +72,12 @@ function Calculator() {
     try {
       let expression = formula;
       
-      // Format the expression for evaluation
+  
       if (isOperator(expression.slice(-1))) {
         expression = expression.slice(0, -1);
       }
       
-      // Evaluate and round to appropriate decimal places
+     
       const result = parseFloat(eval(expression).toFixed(15));
       setDisplay(String(result));
       setFormula(expression + '=' + result);
